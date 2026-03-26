@@ -60,7 +60,11 @@ import AiInsightCard from "./components/AiInsightCard";
 import MetricsCards from "./MetricsCards";
 import ProcessDashboard from "./components/ProcessDashboard";
 import ConnectAccountsSection from "./components/ConnectAccountsSection";
+ feat/ui-ai-pulsing-status
+import PulsingAIStatus from "./components/PulsingAIStatus";
+
 import RevenueTrendChart from "@/components/RevenueTrendChart";
+main
 
 export default function Home() {
   return (
@@ -104,6 +108,10 @@ export default function Home() {
           {/* AI Insight */}
           <section className="w-full flex justify-center">
             <AiInsightCard />
+          </section>
+
+          <section className="w-full flex justify-center pt-5 pb-3">
+            <PulsingAIStatus/>
           </section>
 
           {/* Progress */}
